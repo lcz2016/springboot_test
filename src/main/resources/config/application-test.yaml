@@ -1,0 +1,7 @@
+dog:
+  name: 旺财
+  age: 3
+  lists: [boy,girl]
+  person: {name: lxx, age: 30}
+server:
+  port: 8082
