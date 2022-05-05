@@ -5,3 +5,10 @@ dog:
   person: {name: lxx, age: 30}
 server:
   port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.96.29.70:3306/apidb?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    user: root
+    password: EasyMan123!@#

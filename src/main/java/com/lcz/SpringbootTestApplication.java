@@ -1,10 +1,13 @@
 package com.lcz;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication // 標注是一個springboot應用是義哥
+
 public class SpringbootTestApplication {
 
     public static void main(String[] args) {

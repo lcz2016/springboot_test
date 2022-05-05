@@ -18,7 +18,7 @@ public class HelloController {
 
     @GetMapping("/hello_param")
     @ResponseBody
-    public String hello_param(@RequestParam Integer start){
+    public String hello_param ( @RequestParam Integer start){
         return start.toString();
     }
 
