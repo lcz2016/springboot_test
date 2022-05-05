@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication // 標注是一個springboot應用是義哥
-
+@MapperScan("com.lcz.mapper")
 public class SpringbootTestApplication {
 
     public static void main(String[] args) {

@@ -1,8 +1,7 @@
-package com.lcz.service;
+package com.lcz.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lcz.pojo.User;
-import org.apache.ibatis.annotations.Mapper;
+import com.lcz.models.User;
 import org.springframework.stereotype.Repository;
 
 @Repository
