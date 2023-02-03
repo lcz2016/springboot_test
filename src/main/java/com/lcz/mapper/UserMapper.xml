@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lcz.mapper.UserMapper">
+
+<select id="findPageUsers" resultType="com.lcz.models.User">
+    select *
+    from `user`
+</select>
+    <resultMap id="usersMap" type="com.lcz.models.UserVo">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+    </resultMap>
+<select id="getUserName"  parameterType="com.lcz.models.UserDto" resultMap="usersMap">
+select id,name
+from `user` where 1=1
+<if test="userDto.name!=null">
+    and name=#{userDto.name}
+</if>
+</select>
+
+</mapper>
