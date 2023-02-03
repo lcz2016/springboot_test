@@ -3,15 +3,19 @@ dog:
   age: 3
   lists: [boy,girl]
   person: {name: lxx2, age: 30}
+
+school:
+  name: 北京大学
+
 server:
   port: 8081
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://39.96.29.70:3306/apidb?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://117.139.247.117:6033/basapi?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
     username: root
-    password: EasyMan123!@#
+    password: EasyMan
 
 mybatis-plus:
   mapper-locations: classpath:mapper/*Mapper.xml

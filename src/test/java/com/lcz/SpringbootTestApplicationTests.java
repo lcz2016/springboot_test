@@ -8,6 +8,7 @@ import com.lcz.models.UserVo;
 import org.apache.ibatis.annotations.Select;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
@@ -21,6 +22,8 @@ class SpringbootTestApplicationTests {
      Dog d;
     @Autowired
     UserMapper userMapper;
+    @Value("${school.name}")
+    private String schoolName;
     @Test
     void contextLoads() {
         System.out.println(p.getAge());
@@ -45,6 +48,7 @@ class SpringbootTestApplicationTests {
         userDto.setName("lcz");
         List<UserVo> userNames = userMapper.getUserName(new Page(1,4),userDto);
         System.out.println(userNames);
+        System.out.println(schoolName);
     }
 
 }

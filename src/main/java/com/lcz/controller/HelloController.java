@@ -36,7 +36,7 @@ public class HelloController {
 
     @PostMapping("/hello_postjson")
     @ResponseBody
-    public String hello_postjson(@RequestBody JSONObject jsonParam){
+    public String hello_postjson(@RequestBody JSONObject jsonParam,@RequestParam String ss){
         System.out.println(jsonParam);
         Map<String,Object> map =new HashMap<>();
         Iterator it = jsonParam.entrySet().iterator();
